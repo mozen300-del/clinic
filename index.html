@@ -1,0 +1,11 @@
+<h1>نظام حجز عيادة - دكتورة مايا</h1>
+<input id="name" placeholder="اسم المريض">
+<input id="date" type="date">
+<button onclick="book()">احجز</button>
+<p id="msg"></p>
+<script>
+function book(){
+ localStorage.setItem('patient', document.getElementById('name').value);
+ document.getElementById('msg').innerText = "تم الحجز!";
+}
+</script>
